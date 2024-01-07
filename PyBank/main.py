@@ -43,3 +43,16 @@ print(f'changes in Profit/Losses: {revenue_change_list}')
 print(f'Average Change: ${average_change:.2f}')
 print(f'Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})')
 print(f'Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})')
+
+#write the results to a text file
+with open("C:\\Users\\artsy\\OneDrive\\Desktop\\python-challenge-repo\\python-challenge\\analysis\\analysis_text", 'w') as output_file:
+    output_file.write("Finacial Analysis\n")
+    output_file.write("-----------------\n")
+    output_file.write(f'Total number of months: {total_months}\n')
+    output_file.write(f'Net total profit/losses: ${net_total}\n')
+    output_file.write(f'Changes in Profit/Losses: {revenue_change_list}\n')
+    output_file.write(f'Average Change: ${average_change:.2f}\n')
+    output_file.write(f'Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increase[1]})')
+    output_file.write(f'Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})')
+
+print("Results have been exported to analysis_text.txt")
