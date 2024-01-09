@@ -45,7 +45,8 @@ print(f'Greatest Increase in Profits: {greatest_increase[0]} (${greatest_increas
 print(f'Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})')
 
 #write the results to a text file
-with open("C:\\Users\\artsy\\OneDrive\\Desktop\\python-challenge-repo\\python-challenge\\analysis\\analysis_text", 'w') as output_file:
+output_file_path = "C:\\Users\\artsy\\OneDrive\\Desktop\\python-challenge-repo\\python-challenge\\analysis\\analysis_text.txt"
+with open(output_file_path, 'w') as output_file:
     output_file.write("Finacial Analysis\n")
     output_file.write("-----------------\n")
     output_file.write(f'Total number of months: {total_months}\n')
